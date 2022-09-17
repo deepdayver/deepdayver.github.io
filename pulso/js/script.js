@@ -59,5 +59,32 @@ $(document).ready(function () {
 		modalctr.hide();
 		};
 });
-
+	$('#consultation-form').validate();
+	$('#consultation form').validate({
+		errorClass: "invalid" ,
+		rules: {
+    		name: {
+      		required: true,
+      		minlength: 2
+			},
+			phone: "required",
+			email: {
+				required: true,
+				email: true
+			}
+		},
+		messages: {
+    		name: {
+      		required: " Введите имяя",
+      		minlength: jQuery.validator.format("Как миниммум {0}  символа")
+			},
+			phone: "Введите телефон",
+			email: {
+				required: "Введите почту",
+				email: "Неправильно"
+			}
+		},
+		
+	});
+	$('#order form').validate();
 });

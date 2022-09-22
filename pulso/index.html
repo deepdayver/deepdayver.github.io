@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="container">
             <header class="header">
                 <a  href="#" class="header__logo">
@@ -71,7 +72,7 @@
                     </div>
                 </div>
                 <div class="advantages__item">
-                    <img src="icons/heart.png" alt="heart" class="advantages__icon">
+                    <img src="icons/heart.png" alt="heart" class="advantages__icon advantages__icon_animated">
                     <div class="advantages__subtitle">
                         Заботимся о здоровье
                     </div>
@@ -114,7 +115,7 @@
             </form>
         </div>
     </section>
-    <section class="carousel">
+    <div class="carousel">
         <div class="container">
             <div class="carousel__inner">
                 <div>
@@ -128,7 +129,7 @@
                 </div>
             </div>
         </div>     
-    </section>
+    </div>
     <section class="catalog">
         <div class="container">
             <h2 class="title">Каталог пульсометров</h2>
@@ -437,7 +438,7 @@
     <section class="feed">
         <div class="container">
             <h2 class="title">отзывы клиентов</h2>
-                <div class="feed__wrapper">
+                <div class="feed__wrapper animate__fadeInUp animate__animated wow" data-wow-duration="2s" data-wow-delay="1s">
                     <img src="img/review/photo_1.png" alt="one">
                     <div class="feed__info">
                         <div class="feed__header">Ирина Иванченко</div>
@@ -448,7 +449,7 @@
                         <br><br> Спасибо, RunSmart!</div>
                     </div>
                 </div>
-                <div class="feed__wrapper">
+                <div class="feed__wrapper animate__fadeInUp animate__animated wow" data-wow-duration="2s" data-wow-delay="1s">
                     <img src="img/review/photo_2.png" alt="two">
                     <div class="feed__info">
                         <div class="feed__header">Иван Сёмочкин</div>
@@ -462,7 +463,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="feed__wrapper">
+                <div class="feed__wrapper animate__fadeInUp animate__animated wow" data-wow-duration="2s" data-wow-delay="1s">
                     <img src="img/review/photo_3.png" alt="three">
                     <div class="feed__info">
                         <div class="feed__header">Юлия Дашкина</div>
@@ -482,7 +483,7 @@
     <footer class="footer"> 
         <iframe
         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1268.3360708147761!2d30.504994267649398!3d50.521666863168505!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d2473fc7208d%3A0x6bbb517e7b4ab9!2zUGFya292a2EsINCy0YPQu9C40YbRjyDQk9C10YDQvtGX0LIg0JTQvdGW0L_RgNCwLCDQmtC40ZfQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1661685468599!5m2!1sru!2sua"
-        width="100%" height="630" style="border:0;" allowfullscreen="" loading="lazy"
+        allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div class="footer__info">
             <address class="footer__addr">Киев,улица Героїв Дніпра, 45.
@@ -528,12 +529,18 @@
             <div class="modal__descr">Наш менеджер свяжется с вами в ближайшее время!</div>
         </div>
     </div>
-   
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+ <a href="#up" class="pageup">
+    <img src="icons/up.svg" alt="up">
+ </a>
+    
+
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
